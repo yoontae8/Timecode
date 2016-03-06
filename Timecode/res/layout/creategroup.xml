@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ede3"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10sp"
+             android:layout_marginRight="10sp"
+             android:src="@drawable/creategroup" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        
+		     <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:layout_weight="1" >
+		        
+			        <Button
+			            android:id="@+id/button1"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40sp"
+			            android:layout_marginBottom="20sp"
+			            android:layout_marginLeft="25sp"
+			            android:layout_marginRight="25sp"
+			            android:layout_marginTop="10dp"
+			            android:background="#67563e"
+			            android:text="Group"
+			            android:textColor="#bee1db" />
+			
+				    <Button
+				        android:id="@+id/button2"
+				        android:layout_width="fill_parent"
+				        android:layout_height="40sp"
+				        android:layout_marginLeft="25sp"
+				        android:layout_marginRight="25sp"
+				        android:background="#67563e"
+				        android:text="Subject"
+				        android:textColor="#bee1db" />
+			        
+		    </LinearLayout>    
+		    
+		     <LinearLayout
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:orientation="vertical"
+		        android:layout_weight="1" >
+		        
+			      <EditText
+			          android:id="@+id/CreateGroupName"
+			          android:layout_width="fill_parent"
+			          android:layout_height="wrap_content"
+			          android:layout_marginBottom="10sp"
+			          android:layout_marginRight="15sp"
+			          android:layout_marginTop="10dp"
+			          android:ems="10"
+			          android:hint="groupname" >
+			
+			        <requestFocus />
+		   			 </EditText>
+		
+				    <EditText
+				        android:id="@+id/CreateSubjectName"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginRight="10sp"
+				        android:ems="10"
+				        android:hint="subject" />
+        
+    		</LinearLayout>    
+        
+    </LinearLayout>
+        
+        
+        
+        
+  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+		
+      <Button
+        android:id="@+id/SetMeetingButton"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+	    android:layout_marginBottom="10sp"
+	    android:layout_marginLeft="20sp"
+	    android:layout_marginRight="20sp"
+        android:background="#bee1db"
+        android:onClick="SetMeetingOnClick"
+        android:text="Set Meeting"
+        android:textColor="#67563e" />     
+	  
+	      
+	    <ListView
+	        android:id="@+id/MeetingList"
+	        android:layout_width="fill_parent"
+	        android:layout_height="80dp"
+	        android:layout_marginLeft="20sp"
+	        android:layout_marginRight="20dp" />
+    
+  </LinearLayout>
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+	    
+       <Button
+	       android:id="@+id/InviteButton"
+	       android:layout_width="fill_parent"
+	       android:layout_height="40dp"
+	       android:layout_marginBottom="10sp"
+	       android:layout_marginLeft="20sp"
+	       android:layout_marginRight="20sp"
+	       android:background="#f7bfbd"
+	       android:onClick="InviteOnClick"
+	       android:text="Invite Members"
+	       android:textColor="#67563e" />
+	    
+      <ListView
+          android:id="@+id/MemberList"
+          android:layout_width="fill_parent"
+          android:layout_height="80dp"
+          android:layout_below="@+id/InviteButton"
+          android:layout_centerHorizontal="true"
+          android:layout_marginLeft="20sp"
+          android:layout_marginRight="20dp" />
+           
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:orientation="vertical" >
+            
+		    <Button
+		        android:id="@+id/CreateButton"
+		        android:layout_width="fill_parent"
+		        android:layout_height="30dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignRight="@+id/MeetingList"
+		        android:layout_marginLeft="120sp"
+		        android:layout_marginRight="120sp"
+		        android:background="#f7bfbd"
+		        android:onClick="CreateOnClick"
+		        android:text="OK"
+		        android:textColor="#67563e" />
+		            
+	</LinearLayout>
+
+</LinearLayout>

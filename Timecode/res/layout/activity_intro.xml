@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ede3"
+    android:orientation="vertical"
+    tools:context=".Intro" >
+	
+     <LinearLayout
+        android:layout_width = "fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+         <ImageView
+             android:id="@+id/introimage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="10sp"
+             android:layout_marginLeft="50sp"
+             android:layout_marginRight="50sp"
+             android:layout_marginTop="110sp"
+             android:src="@drawable/main" />
+
+        </LinearLayout>
+        
+       <LinearLayout
+	        android:layout_width = "match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:orientation ="horizontal">
+
+           
+     	<RelativeLayout
+	        android:layout_width = "fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1">
+
+     	    <Button
+     	        android:id="@+id/interreg"
+     	        android:layout_width="100sp"
+     	        android:layout_height="40sp"
+     	        android:layout_alignParentRight="true"
+     	        android:layout_centerVertical="true"
+     	        android:layout_marginRight="10dp"
+     	        android:background="#bee1db"
+     	        android:text="Register Page"
+     	        android:textColor="#67563e" />
+
+        </RelativeLayout>
+   
+   		<RelativeLayout
+	        android:layout_width = "fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1">
+
+           <Button
+               android:id="@+id/interlogin"
+               android:layout_width="100sp"
+               android:layout_height="40sp"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               android:layout_marginLeft="10dp"
+               android:background="#bee1db"
+               android:text="Login Page"
+               android:textColor="#67563e" />
+         
+       	</RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2" >
+
+        </LinearLayout>
+   
+
+  
+
+</LinearLayout>

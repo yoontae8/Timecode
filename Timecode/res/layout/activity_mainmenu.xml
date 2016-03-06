@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f6ec"
+    android:orientation="vertical" >
+
+           
+     <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="4" >
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10sp"
+             android:layout_marginRight="10sp"
+             android:src="@drawable/mainmenu" />
+
+      </LinearLayout>
+         
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="2" >
+ 
+	  <Button
+	      android:id="@+id/selectBtn"
+	      android:layout_width="fill_parent"
+	      android:layout_height="40dp"
+	      android:layout_below="@+id/time_tBtn"
+	      android:layout_centerHorizontal="true"
+	      android:layout_marginBottom="20sp"
+	      android:layout_marginLeft="80sp"
+	      android:layout_marginRight="80sp"
+	      android:layout_marginTop="50sp"
+	      android:background="#f7bfbd"
+	      android:text="Select Group"
+	      android:textColor="#67563e" />
+	      
+	  <Button
+	      android:id="@+id/createBtn"
+	      android:layout_width="fill_parent"
+	      android:layout_height="40dp"
+	      android:layout_below="@+id/selectBtn"
+	      android:layout_centerHorizontal="true"
+	      android:layout_marginBottom="20sp"
+	      android:layout_marginLeft="80sp"
+	      android:layout_marginRight="80sp"
+	      android:background="#bee1db"
+	      android:text="Create Group"
+	      android:textColor="#67563e" />
+	  
+	  <Button
+	      android:id="@+id/Planner"
+	      android:layout_width="fill_parent"
+	      android:layout_height="40dp"
+	      android:layout_below="@+id/createBtn"
+	      android:layout_centerHorizontal="true"
+	      android:layout_marginBottom="20sp"
+	      android:layout_marginLeft="80sp"
+	      android:layout_marginRight="80sp"
+	      android:background="#f7bfbd"
+	      android:text="Planner"
+	      android:textColor="#67563e" />
+	
+	  <Button
+	      android:id="@+id/time_tBtn"
+	      android:layout_width="fill_parent"
+	      android:layout_height="40dp"
+	      android:layout_alignLeft="@+id/selectBtn"
+	      android:layout_below="@+id/imageView1"
+	      android:layout_marginLeft="80sp"
+	      android:layout_marginRight="80sp"
+	      android:background="#bee1db"
+	      android:text="Time Travler"
+	      android:textColor="#67563e" />
+
+	</LinearLayout>
+
+     
+
+       
+     <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="4" >
+         </LinearLayout>
+
+</LinearLayout>

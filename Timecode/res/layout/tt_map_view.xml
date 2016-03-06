@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f6ec" 
+    android:orientation = "vertical">
+    
+
+    <LinearLayout
+        android:id="@+id/Head"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp" >
+	        
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/DP"
+	        android:layout_alignLeft="@+id/Head"
+	        android:src="@drawable/timetraveler" />
+
+    </LinearLayout>
+    
+    
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight=".005"
+	    android:orientation="horizontal" >
+        
+		     <LinearLayout
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_weight="1"
+		         android:orientation="vertical" >
+		        
+				   	<TextView
+				   	    android:id="@+id/SP1"
+				   	    android:layout_width="fill_parent"
+				   	    android:layout_height="40sp"
+				   	    android:layout_marginLeft="10sp"
+				   	    android:layout_marginTop="20sp"
+				   	    android:text="[출발] START POINT : "
+				   	    android:textColor="#67563e" />
+	
+			        <TextView
+			            android:id="@+id/DP1"
+			            android:layout_width="fill_parent"
+			            android:layout_height="40sp"
+			            android:layout_marginLeft="10sp"
+			            android:layout_marginTop="5sp"
+			            android:text="[도착] DESTINATION : "
+			            android:textColor="#67563e" />
+					        
+			</LinearLayout>    
+				    
+		     <LinearLayout
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_weight="1"
+		         android:orientation="vertical" >
+		        
+		             <TextView
+		                 android:id="@+id/SP2"
+		                 android:layout_width="fill_parent"
+		                 android:layout_height="40sp"
+		                 android:layout_marginRight="10sp"
+		                 android:layout_marginTop="20sp"
+		                 android:text="SP2 " />
+
+					 <TextView
+					     android:id="@+id/DP2"
+					     android:layout_width="fill_parent"
+					     android:layout_height="40sp"
+					     android:layout_marginRight="10sp"
+					     android:layout_marginTop="5sp"
+					     android:text="DP2" />
+        
+    		</LinearLayout>    
+        
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight=".1"
+	    android:orientation="vertical" >
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="fill_parent"
+		    android:layout_height="195dp"
+		    android:layout_marginTop="20sp"
+		    android:src="@drawable/map" />
+	   
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_weight="1" >
+        
+		     <LinearLayout
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_weight="1"
+		         android:orientation="vertical" >
+
+					<TextView
+					    android:id="@+id/PATH1"
+					    android:layout_width="fill_parent"
+					    android:layout_height="40sp"
+					    android:layout_marginLeft="10sp"
+					    android:layout_marginTop="20sp"
+					    android:gravity="center_vertical"
+					    android:text="[가는길] PATH : "
+					    android:textColor="#67563e" />
+
+				    <TextView
+				        android:id="@+id/SC1"
+				        android:layout_width="fill_parent"
+				        android:layout_height="40dp"
+				        android:layout_marginLeft="10sp"
+				        android:layout_marginTop="25sp"
+				        android:gravity="center_vertical"
+				        android:text="[지름길] SHORT CUT : "
+				        android:textColor="#67563e" />
+	 
+			</LinearLayout>    
+				    
+		     <LinearLayout
+		         android:layout_width="fill_parent"
+		         android:layout_height="wrap_content"
+		         android:layout_weight="1"
+		         android:orientation="vertical" >
+				    
+		         	<TextView
+		         	    android:id="@+id/SC2"
+		         	    android:layout_width="fill_parent"
+		         	    android:layout_height="60sp"
+		         	    android:layout_marginBottom="10dp"
+		         	    android:layout_marginRight="10sp"
+		         	    android:layout_marginTop="20sp"
+		         	    android:gravity="center_vertical"
+		         	    android:text="SC2 "
+		         	    android:textColor="#67563e" />
+				
+				    <TextView
+				        android:id="@+id/PATH2"
+				        android:layout_width="fill_parent"
+				        android:layout_height="60sp"
+				        android:layout_marginRight="10sp"
+				        android:layout_marginTop="5sp"
+				        android:text="PATH2"
+				        android:textColor="#67563e" />
+        
+    		</LinearLayout>    
+        
+    </LinearLayout>
+    
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="app_name">TimeCode_suzie</string> 
+  <string name="action_settings">Settings</string> 
+  <string name="hello_world">Hello world!</string> 
+  <string name="hintPasswd">Password</string> 
+  <string name="hintPhonnum">Phone number</string> 
+  <string name="StartPoint">Select SP</string> 
+  <string name="DestinaionPoint">Select DP</string> 
+ <string-array name="points">
+  <item>Shalom_Evenezel</item> 
+  <item>Evenezel</item> 
+  <item>Vision</item> 
+  <item>Creation</item> 
+  <item>Bethel</item> 
+  <item>Lothem</item> 
+  <item>Grace</item> 
+  <item>HyoamChaplain</item> 
+  <item>GLC</item> 
+  <item>HDH</item> 
+  <item>NMH</item> 
+  <item>NTH</item> 
+  <item>OH</item> 
+  <item>ANH</item> 
+  <item>SU</item> 
+  </string-array>
+
+</resources>
